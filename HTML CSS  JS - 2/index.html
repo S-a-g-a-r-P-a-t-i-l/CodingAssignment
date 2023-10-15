@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <form id="survey-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" required>
+
+            <label for="date-of-birth">Date of Birth:</label>
+            <input type="date" id="date-of-birth" required>
+
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="">Select Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="checkbox" id="male" name="gender" value="Male"> <label for="male">Male</label>
+                <input type="checkbox" id="female" name="gender" value="Female"> <label for="female">Female</label>
+            </div>
+
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="mobile-number">Mobile Number:</label>
+            <input type="tel" id="mobile-number" required>
+
+            <button type="submit" onclick="submitForm(event)">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+
+        <div class="copyright">
+            &copy; 2023 SAGARPATIL. All rights reserved.
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
